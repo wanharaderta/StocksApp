@@ -13,6 +13,8 @@
 		831BCFB22491282400D30F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831BCFB12491282400D30F21 /* Assets.xcassets */; };
 		831BCFB52491282400D30F21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831BCFB42491282400D30F21 /* Preview Assets.xcassets */; };
 		831BCFB82491282400D30F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831BCFB62491282400D30F21 /* LaunchScreen.storyboard */; };
+		831BCFC624912A2000D30F21 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BCFC524912A2000D30F21 /* WebService.swift */; };
+		831BCFC924912B4E00D30F21 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BCFC824912B4E00D30F21 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		831BCFB42491282400D30F21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		831BCFB72491282400D30F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		831BCFB92491282400D30F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831BCFC524912A2000D30F21 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		831BCFC824912B4E00D30F21 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,12 @@
 		831BCFAA2491282300D30F21 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
-				831BCFAB2491282300D30F21 /* AppDelegate.swift */,
-				831BCFAD2491282300D30F21 /* SceneDelegate.swift */,
-				831BCFAF2491282300D30F21 /* ContentView.swift */,
-				831BCFB12491282400D30F21 /* Assets.xcassets */,
-				831BCFB62491282400D30F21 /* LaunchScreen.storyboard */,
-				831BCFB92491282400D30F21 /* Info.plist */,
+				831BCFC724912B3400D30F21 /* Models */,
+				831BCFC4249129ED00D30F21 /* Services */,
+				831BCFC1249128CB00D30F21 /* Views */,
+				831BCFC0249128B200D30F21 /* Resource */,
+				831BCFBF2491288400D30F21 /* App */,
+				831BCFC3249128EE00D30F21 /* File */,
 				831BCFB32491282400D30F21 /* Preview Content */,
 			);
 			path = StocksApp;
@@ -73,6 +77,56 @@
 				831BCFB42491282400D30F21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		831BCFBF2491288400D30F21 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFAB2491282300D30F21 /* AppDelegate.swift */,
+				831BCFAD2491282300D30F21 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		831BCFC0249128B200D30F21 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFB12491282400D30F21 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		831BCFC1249128CB00D30F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFB62491282400D30F21 /* LaunchScreen.storyboard */,
+				831BCFAF2491282300D30F21 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		831BCFC3249128EE00D30F21 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFB92491282400D30F21 /* Info.plist */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		831BCFC4249129ED00D30F21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFC524912A2000D30F21 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		831BCFC724912B3400D30F21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				831BCFC824912B4E00D30F21 /* Stock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +202,8 @@
 			files = (
 				831BCFAC2491282300D30F21 /* AppDelegate.swift in Sources */,
 				831BCFAE2491282300D30F21 /* SceneDelegate.swift in Sources */,
+				831BCFC624912A2000D30F21 /* WebService.swift in Sources */,
+				831BCFC924912B4E00D30F21 /* Stock.swift in Sources */,
 				831BCFB02491282300D30F21 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +344,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StocksApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9X49T6R38;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = StocksApp/Info.plist;
+				INFOPLIST_FILE = StocksApp/File/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +365,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StocksApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9X49T6R38;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = StocksApp/Info.plist;
+				INFOPLIST_FILE = StocksApp/File/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
