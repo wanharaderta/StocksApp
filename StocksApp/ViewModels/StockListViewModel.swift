@@ -10,15 +10,25 @@ import Foundation
 
 class StockListViewModel : ObservableObject{
     
-    var searchTerm: String       = ""
+    @Published var searchTerm: String       = ""
     @Published var stocks: [StockViewModel] = [StockViewModel]()
+    @Published var news: [NewsViewModel]    = [NewsViewModel]()
     
     func load() {
         fetchStocks()
     }
     
+    private func fetchNews(){
+        WebService().getTopNews { news in
+            if let news = news {
+                DispatchQueue.main.async {
+                    self.news   = news.map(NewsViewModel.init)
+                }
+            }
+        }
+    }
+    
     private func fetchStocks(){
-        
         WebService().getStocks { stocks in
             if let stocks   = stocks {
                 DispatchQueue.main.async {

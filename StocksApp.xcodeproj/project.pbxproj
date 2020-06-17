@@ -15,6 +15,9 @@
 		831BCFB82491282400D30F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831BCFB62491282400D30F21 /* LaunchScreen.storyboard */; };
 		831BCFC624912A2000D30F21 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BCFC524912A2000D30F21 /* WebService.swift */; };
 		831BCFC924912B4E00D30F21 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BCFC824912B4E00D30F21 /* Stock.swift */; };
+		831ED032249A672D00497D95 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831ED031249A672C00497D95 /* Article.swift */; };
+		831ED036249A6C2A00497D95 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831ED035249A6C2A00497D95 /* NewsViewModel.swift */; };
+		831ED038249A6CF500497D95 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831ED037249A6CF500497D95 /* NewsView.swift */; };
 		833C1F8824927E8600E98C09 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C1F8724927E8600E98C09 /* StockListViewModel.swift */; };
 		833C1F8A24927ED400E98C09 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C1F8924927ED400E98C09 /* StockViewModel.swift */; };
 		8366B7C6249927BB00EB9A30 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B7C5249927BB00EB9A30 /* StockListView.swift */; };
@@ -32,6 +35,9 @@
 		831BCFB92491282400D30F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831BCFC524912A2000D30F21 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		831BCFC824912B4E00D30F21 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		831ED031249A672C00497D95 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		831ED035249A6C2A00497D95 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		831ED037249A6CF500497D95 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		833C1F8724927E8600E98C09 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		833C1F8924927ED400E98C09 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		8366B7C5249927BB00EB9A30 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				831BCFAF2491282300D30F21 /* ContentView.swift */,
 				83C1D8092496544B00AA3C2A /* SearchView.swift */,
 				8366B7C5249927BB00EB9A30 /* StockListView.swift */,
+				831ED037249A6CF500497D95 /* NewsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				831BCFC824912B4E00D30F21 /* Stock.swift */,
+				831ED031249A672C00497D95 /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 			children = (
 				833C1F8724927E8600E98C09 /* StockListViewModel.swift */,
 				833C1F8924927ED400E98C09 /* StockViewModel.swift */,
+				831ED035249A6C2A00497D95 /* NewsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -224,9 +233,12 @@
 				833C1F8824927E8600E98C09 /* StockListViewModel.swift in Sources */,
 				831BCFAE2491282300D30F21 /* SceneDelegate.swift in Sources */,
 				831BCFC624912A2000D30F21 /* WebService.swift in Sources */,
+				831ED032249A672D00497D95 /* Article.swift in Sources */,
 				83C1D80A2496544B00AA3C2A /* SearchView.swift in Sources */,
+				831ED036249A6C2A00497D95 /* NewsViewModel.swift in Sources */,
 				831BCFC924912B4E00D30F21 /* Stock.swift in Sources */,
 				8366B7C6249927BB00EB9A30 /* StockListView.swift in Sources */,
+				831ED038249A6CF500497D95 /* NewsView.swift in Sources */,
 				831BCFB02491282300D30F21 /* ContentView.swift in Sources */,
 				833C1F8A24927ED400E98C09 /* StockViewModel.swift in Sources */,
 			);
