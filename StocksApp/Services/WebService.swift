@@ -13,7 +13,7 @@ class WebService {
     let BASE_URL : String = "https://silicon-rhinoceros.glitch.me/"
     
     func getTopNews(completion : @escaping (([Article]?) -> Void)){
-        guard let url   = URL(string: BASE_URL + "top-news") else {
+        guard let url   = URL(string: "\(BASE_URL)top-news") else {
             fatalError("URL is not correct")
         }
         
@@ -36,7 +36,7 @@ class WebService {
     
     
     func getStocks(completion : @escaping (([Stock]?) -> Void)) {
-        guard let url   = URL(string: BASE_URL + "stocks") else {
+        guard let url   = URL(string: "\(BASE_URL)stocks") else {
             fatalError("URL is not correct")
         }
         

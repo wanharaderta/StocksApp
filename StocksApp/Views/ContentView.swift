@@ -33,7 +33,7 @@ struct ContentView: View {
             ZStack(alignment: .leading) {
                 Color.black
                 
-                Text("January 5 2020")
+                Text("Juni 18 2020")
                     .font(.custom("Arial", size: 32))
                     .fontWeight(.bold)
                     .foregroundColor(Color.gray)
@@ -45,6 +45,18 @@ struct ContentView: View {
                 
                 StockListView(stocks: filteredStocks)
                     .offset(y: 110)
+                
+                NewsView(viewModel: self.stockListVM.news,
+                         onDragBegin: { value in
+                            self.stockListVM.dragOffset = value.translation
+                },onDragEnd: { value in
+                    if value.translation.height  < 0 {
+                        self.stockListVM.dragOffset = CGSize(width: 0, height: 100)
+                    } else {
+                        self.stockListVM.dragOffset = CGSize(width: 0, height: 650)
+                    }
+                }).animation(.spring())
+                    .offset(y: self.stockListVM.dragOffset.height)
                 
             }
                 
