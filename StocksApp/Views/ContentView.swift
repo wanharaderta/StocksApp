@@ -33,7 +33,7 @@ struct ContentView: View {
             ZStack(alignment: .leading) {
                 Color.black
                 
-                Text("Juni 18 2020")
+                Text("Juni 20 2020")
                     .font(.custom("Arial", size: 32))
                     .fontWeight(.bold)
                     .foregroundColor(Color.gray)
@@ -44,7 +44,7 @@ struct ContentView: View {
                     .offset(y: -350 )
                 
                 StockListView(stocks: filteredStocks)
-                    .offset(y: 110)
+                    .offset(y: 120)
                 
                 NewsView(viewModel: self.stockListVM.news,
                          onDragBegin: { value in
